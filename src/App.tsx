@@ -26,12 +26,12 @@ const App: React.FC = () => {
         <div className="min-h-screen bg-white">
           <Suspense fallback={<PageLoader />}>
             <Routes>
-              <Route path="/" element={<Funcionarios />} />
+              <Route path="/" element={<Departamentos />} />
               <Route path="/login" element={<LandingPage />} />
               <Route path="/dashboard" element={<Login />} />
               <Route path="/estatisticas" element={<Dashboard />} />
               <Route path="/funcionarios" element={<Estatisticas />} />
-              <Route path="/departamentos" element={<Departamentos />} />
+              <Route path="/departamentos" element={<Funcionarios />} />
               <Route path="/maquinas" element={<Maquinas />} />
               <Route path="/perfil" element={<Perfil />} />
               <Route path="/relatorios" element={<Relatorios />} />
@@ -48,6 +48,7 @@ const App: React.FC = () => {
 };
 
 export default App;
+
 
 
 
