@@ -26,19 +26,20 @@ const App: React.FC = () => {
         <div className="min-h-screen bg-white">
           <Suspense fallback={<PageLoader />}>
             <Routes>
-              <Route path="/" element={<Contato />} />
-              <Route path="/login" element={<LandingPage />} />
-              <Route path="/dashboard" element={<Login />} />
-              <Route path="/estatisticas" element={<Dashboard />} />
-              <Route path="/funcionarios" element={<Estatisticas />} />
-              <Route path="/departamentos" element={<Funcionarios />} />
-              <Route path="/maquinas" element={<Departamentos />} />
-              <Route path="/perfil" element={<Maquinas />} />
-              <Route path="/relatorios" element={<Relatorios />} />
-              <Route path="/esqueceu-senha" element={<Perfil />} />
-              <Route path="/diferenciais" element={<EsqueceuSenha />} />
-              <Route path="/sobre" element={<Diferenciais />} />
-              <Route path="/contato" element={<Sobre />} />
+                <Route path="/" element={<LandingPage />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/estatisticas" element={<Estatisticas />} />
+                <Route path="/funcionarios" element={<Funcionarios />} />
+                <Route path="/departamentos" element={<Departamentos />} />
+                <Route path="/maquinas" element={<Maquinas />} />
+                <Route path="/perfil" element={<Perfil />} />
+                <Route path="/relatorios" element={<Relatorios />} />
+                <Route path="/esqueceu-senha" element={<EsqueceuSenha />} />
+                <Route path="/diferenciais" element={<Diferenciais />} />
+                <Route path="/sobre" element={<Sobre />} />
+                <Route path="/contato" element={<Contato />} />
+
             </Routes>
           </Suspense>
         </div>
@@ -48,6 +49,7 @@ const App: React.FC = () => {
 };
 
 export default App;
+
 
 
 
