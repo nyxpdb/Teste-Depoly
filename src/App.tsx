@@ -30,7 +30,7 @@ const App: React.FC = () => {
               <Route path="/login" element={<LandingPage />} />
               <Route path="/dashboard" element={<Login />} />
               <Route path="/estatisticas" element={<Dashboard />} />
-              <Route path="/funcionarios" element={<Funcionarios />} />
+              <Route path="/funcionarios" element={<Estatistica />} />
               <Route path="/departamentos" element={<Departamentos />} />
               <Route path="/maquinas" element={<Maquinas />} />
               <Route path="/perfil" element={<Perfil />} />
@@ -48,6 +48,7 @@ const App: React.FC = () => {
 };
 
 export default App;
+
 
 
 
