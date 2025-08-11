@@ -26,7 +26,7 @@ const App: React.FC = () => {
         <div className="min-h-screen bg-white">
           <Suspense fallback={<PageLoader />}>
             <Routes>
-              <Route path="/" element={<LandingPage />} />
+              <Route path="/" element={<Login />} />
               <Route path="/login" element={<Login />} />
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/estatisticas" element={<Estatisticas />} />
@@ -48,3 +48,4 @@ const App: React.FC = () => {
 };
 
 export default App;
+
